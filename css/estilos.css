@@ -1,6 +1,19 @@
 body{
 	font-family: 'Lato', sans-serif;
 }
+.containerheaders{
+  margin: 0;
+  background-color: #379683;
+}
+.code_styles{
+  font-family: 'Fira Code', monospace;
+}
+.codestyles.bold{
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
 .navbar {
   background-color: #5cdb95;
 }
@@ -10,6 +23,11 @@ body{
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
   color: #ffffff;
+}
+.p{
+  
+    text-indent: 2em;
+  
 }
 
 .navbar .navbar-nav .nav-link {
