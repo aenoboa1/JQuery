@@ -36,7 +36,74 @@
 		</header>
 		
 		<div>
-			
+			<div class="titulo" >
+				<p class="display-3"><strong>Sintaxis de jQuery</strong></p>
+				<p class="mb-1 lead subt">Con jQuery seleccionas (consulta) elementos HTML y realizas "acciones" en ellos.</p>
+			</div>
+			<div class="container">
+				<p class="display-6 subt ">
+					Sintaxis de jQuery
+				</p>
+				<p>La sintaxis de jQuery está hecha a medida para <strong>seleccionar</strong> elementos HTML y realizar alguna <strong>acción</strong> en los elementos.</p>
+				<p>La sintaxis básica es: <strong></strong> $ ( selector ). acción ()</p>
+				<ul>
+					<li>Un signo $ para definir / acceder a jQuery</li>
+					<li>Un ( selector ) para "consultar (o buscar)" elementos HTML</li>
+					<li>Una acción jQuery () que se realizará en los elementos</li>
+				</ul>
+				<p>Ejemplos</p>
+				<ul>
+					<li><strong class="neg" >$(this).hide() </strong>oculta el elemento actual.</li>
+					<li><strong class="neg" >$("p").hide() </strong>oculta todos los elementos &lt;p&gt;.</li>
+					<li><strong class="neg" >$(".test").hide() </strong>oculta todos los elementos con class = "test".</li>
+					<li><strong class="neg" >$("#test").hide()</strong>oculta el elemento con id = "test".</li>
+				</ul>
+				<div class="row">
+					<div class="ejem">
+						<p class="subt ">
+							<strong>¿Está familiarizado con los selectores de CSS? </strong><p>
+								jQuery usa la sintaxis CSS para seleccionar elementos. Aprenderá más sobre la sintaxis del selector en el próximo capítulo de este tutorial.
+							</p>
+						</p>
+					</div>
+				</div>
+				<p class="display-6 subt ">
+					El evento Document Ready
+				</p>
+				<p>Es posible que haya notado que todos los métodos jQuery en nuestros ejemplos están dentro de un evento de preparación de documentos:</p>
+				<div > </div>
+				<pre style="margin-bottom: -10px;"> <code>
+$(document).ready(function(){
+
+  // jQuery methods go here...
+
+});
+				</code></pre>
+				<p>Esto es para evitar que se ejecute cualquier código jQuery antes de que el documento termine de cargarse (esté listo). <br>
+				Es una buena práctica esperar a que el documento esté completamente cargado y listo antes de trabajar con él. Esto también le permite tener su código JavaScript antes del cuerpo de su documento, en la sección de cabecera.</p>
+				<p>A continuación, se muestran algunos ejemplos de acciones que pueden fallar si se ejecutan métodos antes de que el documento esté completamente cargado:</p>
+				<ul>
+					<li>Intentando ocultar un elemento que aún no se ha creado</li>
+					<li>Intentando obtener el tamaño de una imagen que aún no está cargada</li>
+				</ul>
+				<div class="row">
+					<div class="ejem">
+						<p class="subt ">
+							<strong>Sugerencia: </strong>El equipo de jQuery también ha creado un método aún más corto para el evento de preparación del documento:
+						</p>
+					</div>
+				</div>
+				<pre style="margin-bottom: -30px;">
+					<code>
+$(function(){
+
+  // jQuery methods go here...
+
+});
+					</code>
+				</pre>
+				<p>Utilice la sintaxis que prefiera. Creemos que el evento de preparación del documento es más fácil de entender al leer el código.</p>
+			</div>
 		</div>
 		<footer class="">
 			<div class="container text-center text-md-left">
