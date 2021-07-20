@@ -1,4 +1,4 @@
-* {
+body{
 	font-family: 'Lato', sans-serif;
 }
 
@@ -20,10 +20,9 @@
 
 .containersubtitles{
   margin: 0;
-
   background-color: #EDF5E1;
-
 }
+
 
 p{
   text-indent: 2em;
@@ -60,3 +59,22 @@ footer{
 	color: #05386b;
 }
 
+.titulo{
+	color:#05386B;
+	text-align: center;
+	margin-top:40px; 
+	margin-bottom: 40px;
+}
+.subt{
+	margin-top: 10px;
+	color: #379683;
+}
+.ejem{
+	background-color: #EDF5E1;
+}
+.neg{
+	color: #05386B;
+}
+.img{
+	width: 300px;
+}
