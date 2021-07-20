@@ -11,12 +11,13 @@
 			<!--Tipografía-->
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700display=swap" rel="stylesheet">
 			<!--JQuery-->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			<link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools27.css">
 	</head>
 	<body>
+
 		<nav class="navbar navbar-expand sticky-top ">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
@@ -24,6 +25,7 @@
 			     JQuery
 			    </a>
 			</div>
+
 			<div class="navbar-nav">
 				<a class="nav-link" aria-current="page" href="index.html">Home</a>
 				<a class="nav-link" href="#">Introducción</a>
@@ -35,6 +37,7 @@
 		</nav>
 		<div>
 			<h1 class="display-3">JQuery Events</h1>
+
 			<p>jQuery está hecho a medida para responder a eventos en una página HTML.</p>
 		</div>
 		<hr>
@@ -43,11 +46,12 @@
 		Todas las acciones de los diferentes visitantes a las que puede responder una página web se denominan eventos.
 
 		Un evento representa el momento preciso en que sucede algo.
-
+			</p>
 	<h6 class="display-6">
 		Ejemplos:
-	</h6 class="display-6" >
-		mover el mouse sobre un elemento
+	</h6>
+	<p>
+		Mover el mouse sobre un elemento
 		seleccionando un botón de radio
 		haciendo clic en un elemento
 		El término "incendios / despedidos" se usa a menudo con eventos. Ejemplo: "El evento de pulsación de tecla se activa en el momento en que pulsa una tecla".
@@ -86,7 +90,29 @@
 		<td>unload</td>
 		</tr>
 		</table>
+		<hr>
+		<div class="containersubtitles">
+		<h6 class="display-6">
+			Sintaxis de jQuery para métodos de eventos
+		</h6>
+	</div> 
+		<hr>
+		<p>
+			En jQuery, la mayoría de los eventos DOM tienen un método jQuery equivalente.
 
+		Para asignar un evento de clic a todos los párrafos de una página, puede hacer esto
+		</p>
+
+		<div class="w3-code w3-border notranslate jsHigh container-sm">
+			<div>
+				<div class="code_styles">
+			$(&quot;p&quot;).click();
+
+				</div>
+			
+		</div>
+		</div>
+			
 
 
 	<footer>

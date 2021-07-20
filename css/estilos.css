@@ -1,15 +1,35 @@
-body{
+* {
 	font-family: 'Lato', sans-serif;
+}
+
+.containerheaders{
+  margin: 0;
+
+  background-color: #5cdb95;
+}
+
+.code_styles{
+  font-family: 'Fira Code', monospace;
+
 
 }
+.containersubtitles{
+  margin: 0;
+
+  background-color: #EDF5E1;
+
+}
+
 p{
   text-indent: 2em;
 }
 h1 {
+
   color:#05386b;
   text-indent: 1em;
 }
 .navbar {
+  
   background-color: #5cdb95;
 }
 .navbar .navbar-brand {
