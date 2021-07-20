@@ -14,6 +14,13 @@ body{
   font-size: xxx-large;
 }
 
+.containersubtitles{
+  margin: 0;
+
+  background-color: #EDF5E1;
+
+}
+
 .navbar {
   background-color: #5cdb95;
 }
