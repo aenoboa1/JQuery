@@ -10,9 +10,14 @@
 
 .code_styles{
   font-family: 'Fira Code', monospace;
-
+}
+.codestyles.bold{
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
 
 }
+
+
 .containersubtitles{
   margin: 0;
 
