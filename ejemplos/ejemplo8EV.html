@@ -27,18 +27,23 @@
                     &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
                     &lt;script&gt;<br>
                     $(document).ready(function(){
-                      $(&quot;#p1&quot;).mouseup(function(){
-                        alert(&quot;Mouse sobre p1!&quot;);
+                      $(&quot;input&quot;).focus(function(){
+                        $(this).css(&quot;background-color&quot;, &quot;yellow&quot;);
+                      });
+                      $(&quot;input&quot;).blur(function(){
+                        $(this).css(&quot;background-color&quot;, &quot;green&quot;);
                       });
                     });
                     &lt;/script&gt;<br>
                     &lt;/head&gt;<br>
                     &lt;body&gt;<br>
                     
-                    &lt;p id=&quot;p1&quot;&gt;Este es un p&aacute;rrafo.&lt;/p&gt;<br>
+                    Nombre:&lt;input type=&quot;text&quot; name=&quot;fullname&quot;&gt;&lt;br&gt;
+                    Email:&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;<br>
                     
                     &lt;/body&gt;<br>
                     &lt;/html&gt;<br>
+                    
                     
             </div>
     
@@ -47,12 +52,18 @@
     
                     <h2 class="display-6">
                         Ejecución </h2>
-                        <p id="p1">Este es un párrafo.</p>
+                        
+                      Nombre:<input type="text" name="fullname"><br>
+                      Email:<input type="text" name="email">
+
                         
                         <script>
                           $(document).ready(function(){
-                            $("#p1").mouseup(function(){
-                              alert("Mouse sobre p1!");
+                            $("input").focus(function(){
+                              $(this).css("background-color", "yellow");
+                            });
+                            $("input").blur(function(){
+                              $(this).css("background-color", "green");
                             });
                           });
                           </script>

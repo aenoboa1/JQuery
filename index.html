@@ -11,29 +11,127 @@
 		<!--Tipografía-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<!--JQuery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand sticky-top ">
-			<div class="container-fluid">
-			    <a class="navbar-brand" href="#">
-			      <img src="imagenes/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-			      JQuery
-			    </a>
+		<header>
+			<nav class="navbar navbar-expand sticky-top">
+				<div class="container-fluid">
+				    <a class="navbar-brand" href="#">
+				      <img src="imagenes/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+				      JQuery
+				    </a>
+				</div>
+					<div class="navbar-nav">
+				        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+				        <a class="nav-link" href="introduccion.html">Introducción</a>
+				        <a class="nav-link" href="comenzar.html">Comenzar</a>
+				        <a class="nav-link" href="sintaxis.html">Sintaxis</a>
+				        <a class="nav-link" href="#">Selectores</a>
+				        <a class="nav-link" href="#">Eventos</a>		        
+				    </div>
+			</nav>
+		</header>
+
+		<div>
+			<div class="titulo" >
+				<p class="display-3"><strong>JQuery</strong></p>
+				<p class="mb-1 lead subt">Es una biblioteca de JavaScript, que simplifica enormemente la programación de JavaScript y es fácil de aprender.</p>
 			</div>
-				<div class="navbar-nav">
-			        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-			        <a class="nav-link" href="#">Introducción</a>
-			        <a class="nav-link" href="#">Comenzar</a>
-			        <a class="nav-link" href="#">Sintaxis</a>
-			        <a class="nav-link" href="../JQuery_Tutorial_Grupo02/JQuery_Selectors.html">Selectores</a>
-			        <a class="nav-link" href="../JQuery_Tutorial_Grupo02/JQuery_Events.html">Eventos</a>
-      
-			    </div>
-		</nav>
-		<footer class="">
+			<div class="container">
+				<div class="row">
+					<div class="img row">
+						<img src="imagenes/tutorial.png" >
+					</div>
+					<div class="col-md-6">
+						<p class="display-6 subt ">
+							Ventajas
+						</p>
+						<p>
+							La ventaja principal de jQuery es que es mucho más fácil que sus competidores. Usted puede agregar plugins fácilmente, traduciéndose esto en un ahorro substancial de tiempo y esfuerzo. De hecho, una de las principales razones por la cual Resig y su equipo crearon jQuery fue para ganar tiempo (en el mundo de desarrollo web, tiempo importa mucho).
+						</p>
+						<p>
+							La licencia open source de jQuery permite que la librería siempre cuente con soporte constante y rápido, publicándose actualizaciones de manera constante. La comunidad jQuery es activa y sumamente trabajadora.
+						</p>
+						<p>
+							Otra ventaja de jQuery sobre sus competidores como Flash y puro CSS es su excelente integración con AJAX.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p class="display-6 subt ">
+							Desventajas
+						</p>
+						<p>
+							Una de las principales desventajas de jQuery es la gran cantidad de versiones publicadas en el corto tiempo. No importa si usted está corriendo la última versión de jQuery, usted tendrá que hostear la librería usted mismo (y actualizarla constantemente), o descargar la librería desde Google (atractivo, pero puede traer problemas de incompatibilidad con el código).
+						</p>
+						<p>Además del problema de las versiones, otras desventajas que podemos mencionar:</p>
+						<ul>
+							<li>jQuery es fácil de instalar y aprender, inicialmente. Pero no es tan fácil si lo comparamos con CSS</li>
+							<li>Si jQuery es implementado inapropiadamente como un Framework, el entorno de desarrollo se puede salir de control.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="ejem">
+						<p class="display-6 subt ">
+							<strong>Ejemplo</strong>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div>
+							<h4 class="subt">Código</h4>
+						</div>
+						<pre class="text-md-left">
+							<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/
+    jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+	$(document).ready(function(){
+		$("h6").click(function(){
+			$(this).hide();
+		});
+	});
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h6&gt;Si haces clic en mí, desapareceré&lt;/h6&gt;
+    &lt;h6&gt;Haz clic en mí!&lt;/h6&gt;
+    &lt;h6&gt;Haz clic en mí, tambien!&lt;/h6&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+							</code>
+						</pre>
+					</div>
+					<div class="col-md-6">
+						<div >
+							<h4 class="subt">Corrida</h4>
+						</div>
+						<div style="margin-top: 30px;">
+							<script>
+								$(document).ready(function(){
+								  $("h6").click(function(){
+								    $(this).hide();
+								  });
+								});
+							</script>
+								<h6>Si haces clic en mí, desapareceré</h6>
+								<h6>Haz clic en mí!</h6>
+								<h6>Haz clic en mí, tambien!</h6>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<footer>
 			<div class="container text-center text-md-left">
 				<div class="row text-center text-md-left">
 					<div class="col-md-3 col-xl-3 col-xl-3 mx-auto mt-3">

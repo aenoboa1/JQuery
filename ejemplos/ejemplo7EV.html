@@ -27,9 +27,12 @@
                     &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
                     &lt;script&gt;<br>
                     $(document).ready(function(){
-                      $(&quot;#p1&quot;).mouseup(function(){
-                        alert(&quot;Mouse sobre p1!&quot;);
-                      });
+                      $(&quot;#p1&quot;).hover(function(){
+                        alert(&quot;Entro en p1!&quot;);
+                      },
+                      function(){
+                        alert(&quot;Bye! Usted ha abandonado p1!&quot;);
+                      }); 
                     });
                     &lt;/script&gt;<br>
                     &lt;/head&gt;<br>
@@ -39,6 +42,7 @@
                     
                     &lt;/body&gt;<br>
                     &lt;/html&gt;<br>
+                    
                     
             </div>
     
@@ -51,9 +55,12 @@
                         
                         <script>
                           $(document).ready(function(){
-                            $("#p1").mouseup(function(){
-                              alert("Mouse sobre p1!");
-                            });
+                            $("#p1").hover(function(){
+                              alert("Entro en p1!");
+                            },
+                            function(){
+                              alert("Bye! Usted ha abandonado p1!");
+                            }); 
                           });
                           </script>
                          

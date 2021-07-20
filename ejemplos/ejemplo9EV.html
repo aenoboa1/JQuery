@@ -21,24 +21,28 @@
             <div class="col">
                 <h2 class="display-6">
                     Codigo </h2>
-                    &lt;!DOCTYPE html&gt;<br>
-                    &lt;html&gt;<br>
-                    &lt;head&gt;<br>
-                    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-                    &lt;script&gt;<br>
-                    $(document).ready(function(){
-                      $(&quot;#p1&quot;).mouseup(function(){
-                        alert(&quot;Mouse sobre p1!&quot;);
-                      });
-                    });
-                    &lt;/script&gt;<br>
-                    &lt;/head&gt;<br>
-                    &lt;body&gt;<br>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+                &lt;script&gt;
+                $(document).ready(function(){
+                  $(&quot;p&quot;).on(&quot;click&quot;, function(){
+                    $(this).hide();
+                  });
+                });
+                &lt;/script&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+
+
+                &lt;p&gt; Si haces clic en m&iacute;, desaparecer&eacute;. &lt;/p&gt;<br>
+                &lt;p&gt; &iexcl;Haz clic en m&iacute;! &lt;/p&gt;<br>
+                &lt;p&gt; &iexcl;Haz clic en m&iacute; tambi&eacute;n! &lt;/p&gt; <br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
                     
-                    &lt;p id=&quot;p1&quot;&gt;Este es un p&aacute;rrafo.&lt;/p&gt;<br>
-                    
-                    &lt;/body&gt;<br>
-                    &lt;/html&gt;<br>
                     
             </div>
     
@@ -47,16 +51,18 @@
     
                     <h2 class="display-6">
                         Ejecución </h2>
-                        <p id="p1">Este es un párrafo.</p>
                         
-                        <script>
-                          $(document).ready(function(){
-                            $("#p1").mouseup(function(){
-                              alert("Mouse sobre p1!");
-                            });
+                        <p> Si haces clic en mí, desapareceré. </p>
+                        <p> ¡Haz clic en mí! </p>
+                        <p> ¡Haz clic en mí también! </p> 
+                        
+                      <script>
+                        $(document).ready(function(){
+                          $("p").on("click", function(){
+                            $(this).hide();
                           });
-                          </script>
-                         
+                        });
+                        </script>
     
     
             </div>
